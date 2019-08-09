@@ -7,6 +7,7 @@ public class MyStudyTest {
 
     @Test
     public void main(){
+        System.out.println(s1.charAt(1));
         System.out.println(s1.hashCode());
     }
 }
