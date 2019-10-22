@@ -7,10 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="sensetimecore" />
-        <module name="sensetimebiz" />
-        <module name="sensetimeapp" />
         <module name="sensetimegunsapitest" />
+        <module name="sensetimeapp" />
+        <module name="sensetimebiz" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="12" />
   </component>
 </project>

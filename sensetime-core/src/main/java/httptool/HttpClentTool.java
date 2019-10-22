@@ -1,7 +1,5 @@
 package httptool;
 
-import com.sun.org.slf4j.internal.Logger;
-import com.sun.org.slf4j.internal.LoggerFactory;
 import exception.HttpProcessException;
 import org.apache.http.*;
 import org.apache.http.client.HttpClient;
@@ -9,6 +7,8 @@ import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.*;
 import org.apache.http.util.EntityUtils;
 
+import org.apache.log4j.Logger;
+import org.slf4j.LoggerFactory;
 import utility.Utils;
 
 import java.io.IOException;
@@ -19,7 +19,7 @@ import java.util.Map;
 
 public class HttpClentTool{
 
-    protected final static Logger logger = LoggerFactory.getLogger(HttpClentTool.class);
+    protected final static Logger logger = (Logger) LoggerFactory.getLogger(HttpClentTool.class);
 
     public static String send(HttpClient client, String url, HttpMethods httpMethod, Map<String,String> parasMap,
                               Header[] headers, String encoding) throws HttpProcessException {
